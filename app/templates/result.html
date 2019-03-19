@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Google get photo</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 id="title">
+        <a href="{{ url_for('index') }}">
+          Googleから画像を取得する
+        </a>
+      </h1>
+      <div class="main-area">
+      <div id="description">
+        <h3>このアプリについて</h3>
+        <span class="desc-text">このアプリは、取得したい画像をGoogleから取得し、ユーザーのデスクトップ下のフォルダに保存します。</span>
+        <div id="proccess">
+          <h3>手順</h3>
+          <div class="desc-text">
+            <span class="text">1.取得したい画像の名前を<strong>検索ワード</strong>に入力します</span>
+            <span class="text">2.取得したい枚数を<strong>取得 画像数</strong>に入力します</span>
+            <span class="text">3.<strong>デスクトップ下</strong>にフォルダが作成され、その中に画像が保存されます</span>
+          </div>
+        </div>
+      </div>
+      <div id="result-area">
+        {% if not error %}
+          <p id="result-word">{{ image_path }}に保存が完了しました</p>
+          <p>検索ワード: {{ search_word }}</p>
+          <p>取得 画像数: {{ get_pages }}</p>
+        {% else %}
+          <p>{{ error }}</p>
+        {% endif %}
+      </div>
+      </div>
+    </div>
+  </body>
+</html>

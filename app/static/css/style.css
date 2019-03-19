@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.wrapper{
+  width: 960px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.main-area{
+  margin-top: 80px;
+  padding-top: 10px;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#title{
+  position: fixed;
+  width: 800px;
+  margin: 0 auto;
+  top: 35px;
+  border-left: 3px solid black;
+  background-color: rgba(0, 0, 200, 0.85);
+}
+#title a{
+  text-decoration: none;
+  color: blue;
+}
+#title a:link,
+#title a:visited,
+#title a:hover,
+#title a:active,
+#title a:focus{
+  color: white;
+  font-weight: bold;
+}
+
+#description{
+  width: 800px;
+  margin: 20px auto 0;
+}
+.desc-text{
+  box-sizing: border-box;
+  width: 600px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 10px;
+}
+.text{
+  display: block;
+  text-align: left;
+}
+
+#input-area{
+  width: 800px;
+  margin: 70px auto;
+}
+#input-form{
+  padding: 10px;
+  background-color: rgba(30, 50, 60, 0.8);
+  border-radius: 10px;
+}
+
+#search-word{
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#get-pages{
+  margin-left: 150px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#search-word-area{
+  width: 350px;
+  height: 30px;
+  padding: 5px;
+}
+#get-pages-area{
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+}
+
+#input-form .text-area{
+  text-align: left;
+}
+#input-form .button-area{
+  text-align: center;
+}
+
+#submit-button{
+  width: 120px;
+  height: 40px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 20, 180, 0.75);
+  cursor: pointer;
+}
+
+#result-area{
+  width: 800px;
+  margin: 70px auto;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 0.5px solid gray;
+}
+
+#result-word{
+  font-size: 30px;
+  font-weight: bold;
+}
