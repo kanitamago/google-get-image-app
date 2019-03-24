@@ -3,7 +3,6 @@ from app.scripts import get_photo
 from flask import render_template, request, url_for, redirect
 from google_images_download import google_images_download
 import os
-#亮介の足跡
 
 @app.route("/", methods=["GET"])
 def index():
