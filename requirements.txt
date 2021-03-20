@@ -4,7 +4,7 @@ Flask==1.0.2
 google-images-download==2.5.0
 gunicorn==19.9.0
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.11.3
 MarkupSafe==1.0
 selenium==3.141.0
 urllib3==1.24.1
